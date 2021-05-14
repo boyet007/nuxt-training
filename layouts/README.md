@@ -5,3 +5,7 @@
 This directory contains your Application Layouts.
 
 More information about the usage of this directory in [the documentation](https://nuxtjs.org/guide/views#layouts).
+
+fix eslint layout
+==================
+.\node_modules\.bin\eslint layouts\inspire_layout.vue --fix
