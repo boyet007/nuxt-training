@@ -9,7 +9,7 @@
 export default {
   data() {
     return {
-      title: 'I am default layout',
+      title: 'I am inspire layout loh',
     }
   },
 }
