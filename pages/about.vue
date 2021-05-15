@@ -1,5 +1,8 @@
 <template>
-  <div><h1>About</h1></div>
+  <div>
+    <h1>About</h1>
+    <NLink to="/">Home</NLink>
+  </div>
 </template>
 
 <script>
@@ -8,6 +11,7 @@ export default {
   asyncData() {
     return { title: 'About' }
   },
+  fetch() {},
   head() {
     return {
       title: 'About',

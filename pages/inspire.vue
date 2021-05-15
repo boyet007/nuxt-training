@@ -16,7 +16,6 @@
 
 <script>
 export default {
-  layout: 'inspire',
   asyncData() {
     return {
       title: 'About',
