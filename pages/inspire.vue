@@ -17,5 +17,22 @@
 <script>
 export default {
   layout: 'inspire',
+  asyncData() {
+    return {
+      title: 'About',
+    }
+  },
+  head() {
+    return {
+      title: 'About head',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'My amasing about',
+        },
+      ],
+    }
+  },
 }
 </script>
