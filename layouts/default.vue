@@ -10,9 +10,9 @@
         <v-btn text href="/weather-app"> Weather </v-btn>
       </v-toolbar>
     </v-flex>
-    <v-container>
+    <v-main>
       <nuxt />
-    </v-container>
+    </v-main>
   </v-layout>
 </template>
 
