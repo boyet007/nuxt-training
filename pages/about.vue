@@ -8,6 +8,7 @@
 <script>
 export default {
   // load before mount
+
   asyncData() {
     return { title: 'About' }
   },
