@@ -19,7 +19,23 @@
 <script>
 export default {
   data() {
-    return {}
+    return {
+      city: 'London',
+      api: 'fe848d92ce456b8799effb3c00ffe8ef',
+      weather: {},
+    }
+  },
+  created() {
+    this.getWeatherInfo()
+  },
+  methods: {
+    getWeatherInfo() {
+      this.$axios
+        .$get(
+          `https://api.openweathermap.org/data/2.5/weather?q=${this.city}&appid=${this.api}`
+        )
+        .then((res) => (this.weather = res))
+    },
   },
 }
 </script>
