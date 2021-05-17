@@ -5,7 +5,7 @@
     </v-flex>
 
     <v-flex xs12>
-      <v-card color="blue-grey darken-2" dark>
+      <v-card color="#2196F3" dark>
         <v-card-text>Here card</v-card-text>
       </v-card>
     </v-flex>
@@ -17,6 +17,11 @@
           solo
         ></v-text-field>
       </v-form>
+      <v-card color="#3949AB" dark>
+        <v-card-text>
+          <div class="font-weight-bold mr-8 mb-1">Today</div>
+        </v-card-text>
+      </v-card>
     </v-flex>
   </v-container>
 </template>
@@ -25,7 +30,7 @@
 export default {
   data() {
     return {
-      city: 'London',
+      city: 'Jakarta',
       api: 'fe848d92ce456b8799effb3c00ffe8ef',
       weather: {},
     }
@@ -37,7 +42,7 @@ export default {
     getWeatherInfo() {
       this.$axios
         .$get(
-          `https://api.openweathermap.org/data/2.5/weather?q=${this.city}&appid=${this.api}`
+          `https://api.openweathermap.org/data/2.5/weather?q=${this.city}&appid=${process.env.weatherAppId}`
         )
         .then((res) => (this.weather = res))
     },
