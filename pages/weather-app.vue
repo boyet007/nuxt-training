@@ -48,6 +48,11 @@ export default {
       weatherAppId: 'fe848d92ce456b8799effb3c00ffe8ef',
     }
   },
+  computed: {
+    icon() {
+      return this.weather.weather ? 
+    }
+  },
   methods: {
     async getWeatherInfo() {
       if (this.city) {
